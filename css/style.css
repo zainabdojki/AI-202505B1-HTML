@@ -1,0 +1,33 @@
+h1{
+    color: aqua;
+    background-color: blueviolet;
+}
+div{
+    background-color: aqua;
+    font-size: 25px;
+}
+.div1{
+    background-color: burlywood;
+}
+.div2{
+    background-color: cadetblue;
+}
+.parent{
+    font-size: 25px;
+    /* border-top-color: brown;
+    border-top-width: 4px;
+    border-top-style: dashed; */
+    border-top: yellowgreen 10px solid;
+    border-bottom: yellow 10px dashed;
+    border-left: grey 10px solid;
+    border-right: maroon 10px double;
+}
+.main{
+    height: 400px;
+    width: 300px;
+    border: 1px solid rgb(211, 203, 203);
+    text-align: justify;
+}
+.c{
+    text-align: center;
+}
