@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id selector</title>
+    <style>
+        #latestProduct .container .row #col{
+            height: auto;
+            width: 200px;
+            background-color: maroon;
+            border: 5px solid black;
+            /* color: white; */
+            text-align: justify;
+        }
+        #latestProduct .container .row #col .content{
+            /* color: yellow; */
+        }
+        #latestProduct .container .row div{
+            color: yellowgreen;
+        }
+         #bestSellingProducts .container .row #col{
+            height: 200px;
+            width: 300px;
+            border: 3px solid red;
+        }
+        #bestSellingProducts .container .row #col img{
+            height: inherit;
+
+        }
+    </style>
+</head>
+<body>
+    <section id="latestProduct">
+        <div class="container">
+        <div class="row">
+            <div class="content c1" id="col">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem atque saepe hic soluta nesciunt. Aspernatur ipsam laboriosam saepe sunt. Tempore aspernatur nam sequi quo iste quia, nesciunt eveniet rem?
+            </div>
+            <div class="content c2" id="col">
+              <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ab. Voluptate non sunt neque consectetur, sit ducimus nam dignissimos iure, molestias et alias   eius! Dolore adipisci iure harum cupiditate accusamus.
+               </p>
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <!-- yahan se mera dusra container start ha -->
+     <section id="bestSellingProducts">
+     <div class="container">
+        <div class="row">
+            <div id="col">
+                    <img src="images/c8.jpg" alt="cat">
+                     </div>
+                   <div id="col"> <img src="images/c5.jpg" alt="cat"> </div> 
+                    <div id="col"><img src="images/c7.jpg" alt="flower"></div>
+                    <div id="col"> <img src="images/c8.jpg" alt="flowers"></div>
+           
+        </div>
+     </div>
+     </section>
+</body>
+</html>
