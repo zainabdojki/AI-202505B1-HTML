@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        .container .col{
+       height: 200px;
+        width: 300px;
+        padding: 20px;
+        border: 1px solid red;
+        text-align: justify;
+
+
+        }
+
+        .col:hover{
+            background-color: yellow;
+            color: maroon;
+            border: 2px solid red;
+        }
+
+        .col:active{
+
+            background-color: green;
+            color: white;
+        }
+
+        a:link{
+            color: green;
+        }
+
+        a:visited{
+            color: red;
+        }
+
+        a:hover{
+           color: orange;
+        }
+
+        a:active{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+<div class="col">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sequi odio nihil quis, laboriosam distinctio? Nemo quia, tempora voluptas ratione excepturi eos voluptate ut nam, deleniti iusto magni commodi earum!
+</div>
+      
+        <ul>
+           <li> <a href="index.html"> Home</a></li>
+           <li> <a href="about.html"> About</a></li>
+           <li> <a href="contact.html"> Contact</a></li>
+           <li> <a href="faq.html"> Faq</a></li>
+
+
+
+        </ul>
+    </div>
+</body>
+</html>
