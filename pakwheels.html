@@ -109,6 +109,8 @@
                     
                 }
             .header{
+                width: 90%;
+                padding-bottom: 5px;
                 color: white;
                 border-bottom:1px solid  rgb(112, 106, 106);
                 background-color: black;
@@ -116,8 +118,10 @@
                 justify-content: space-between;
                 position: relative;
                 top: 35px;
-                padding-left: 110px;
-                padding-right: 200px;
+                margin: 0 auto;
+
+                /* padding-left: 110px;
+                padding-right: 200px; */
                 /* margin right: 10px; 
                 /* margin: 0px auto; */
                 /* left: 50px; */
@@ -132,51 +136,58 @@
              } */
               
                 #cover .background .box{
-                display: inherit;
-                width: 45%;
-                position: relative;
-                margin-top: 80px;
-                margin-left: 250px;
-                /* border: 5px solid orangered; */
-                
+               
+               width: 60%;
+               background-color: white;
+               height: 60px;
+               margin:  0 auto;
+               position: relative;
+                        display: flex;
+                         justify-content: space-between;
+               top: 50px ;
+               
               }
-               #cover .background .box ul{
-                background-color: white;
-                padding: 20px;
-                position: relative;
-                right: -170px;
-                bottom: 20px;
-                text-align: center;
-                border-radius: 5px;
-                
-                
-              }
-             #cover .background .box ul li{
-                display: inline;
-                /* background-color: yellow; */
-                padding: 15px;
-                margin-left: 70px;
-                color: black;
-                /* justify-content: space-between; */
-                /* top: 50px; */
-                /* text-align: center; */
-             }
-             #cover .background .searchbox i{
-                color: white;
-                border: 5px solid white;
-                background-color: blueviolet;
-             }
+              
+             
+            
+.box .child{
+    /* height: inherit; */
+    width: 200px;
+    /* background-color: yellow; */
+     text-align: center;
+    padding-top: 20px;
+}
+ .box .child1{
+    width: 100px;
+    background-color: yellow;
+    /* text-align: center; */
+    /* position: relative; */
+       text-align: center;
+       padding-top: 20px;
+    background-color: green;
+    color: white;
+
+
+} 
+.advance{
+    color: aliceblue;
+    border: 1px solid white;
+}
 
 
 
-
+.generic-red{
+    color: #b73439 !important;
+}
     </style>
 </head>
 <body>
     <!-- header start -->
      <header>
         <div class="header">
-            <div >Download App Via Sms </div>
+            <div >
+                <i class="fa fa-mobile generic-red"></i>
+                Download App Via Sms </div>
             <div>Sign Up | Sign In</div>
         </div>
 
@@ -235,29 +246,23 @@
                     </div>
                     
                     <div class="box">
-                    <ul>
-                        <li> Car Make or Model</li>
-                        <li id="city">All Cities
-                            <i class="fa fa-caret-down"></i>
-                        </li>
-                        <li id="Price">Price Range
-                            <i class="fa fa-caret-down"></i>
-                        </li>
-                        <!-- <li id="search">
-                            <i class="fa fa-search"></i>
-                        </li> -->
-                    </ul>
-                    
-                    </div>
-                   <div class="searcbox">
                         
-                       <i class="fa fa-search"></i>
+                        <div class="child">Car Make or Model </div>
+                        <div class="child">All Cities
+                             <i class="fa fa-caret-down"></i>
+                        </div>
+                        <div class="child">Price Range
+                             <i class="fa fa-caret-down"></i>
+                        </div>
+                        <div class="child1">
+                            <i class="fa fa-search"></i>
+                        </div>
 
-                    
-                           
                     </div>
-
-                </div>
+                    <div class="advance">
+                        Advanced Filter
+                    </div>
+                      
 
 
 
