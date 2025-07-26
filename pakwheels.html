@@ -151,30 +151,31 @@
             z-index: 5;
         } 
         #container{
-            margin-right: auto;
+            margin-right: auto; 
     margin-left: auto;
     padding-left: 10px;
-    padding-right: 10px;
-    width: 1020px;
+    padding-right: 10px; 
+     width: 70%;
+    margin: 0 auto;
+    
 }
     
         .home-widget{
             border: 1px solid grey;
-            padding: 30px 20px; */
+            /* padding: 30px 20px; */ 
             margin-top: 20px;
             /* width: 800px; */
             height: 300px;
             /* width: 900px; */
             position: relative;
             top: 50px;
+            /* display: flex; */
+            padding-bottom: 50px;
            
            
            
         }
-        .row{
-            margin-left: -10px ;
-            margin-right: -10px;
-        }
+        
 
         .home-widget-title{
            text-align: center;
@@ -184,8 +185,8 @@
                top: -5px;
         }
         .home-widget-title h3{
-            /* position: relative;
-            top: 40px; */
+            position: relative;
+            top: 40px;
             font-size: 35px;
             display: inline-block;
             background-color: white;
@@ -195,19 +196,8 @@
             font-family: sans-serif;
         }
 
-        .column{
-            height: 300px;
-            width: 500px;
-            /* border: 2px solid rgb(237, 243, 237); */
-        }
-        .column h2{
-            padding-left: 20px;
-            font-size: 30px;
-            padding-top: 20px;
-            color: #233d7b;
-            font-family: sans-serif;
-
-        }
+      
+       
         .des .tick i{
             color: green ;
             /* background-color: #9fac64; */
@@ -227,22 +217,9 @@
             /* padding: auto; */
             margin: 10px;
         }
-        .column1{
-            /* display: flex;
-            flex-wrap: ; */
-            position: relative;
-            top: -302px;
-            left: 560px;
-        }
-        .column1 h2{
-             padding-left: 20px;
-            font-size: 30px;
-            padding-top: 20px;
-            color: #233d7b;
-            font-family: sans-serif;
-            
-            
-        }
+        
+         
+          
         .button2{
             background-color:#518ecb ;
             color: white;
@@ -253,6 +230,7 @@
             border-radius: 5px;
             outline: none !important;
             position: relative;
+            border: 2px solid rgb(206, 199, 185);
         top: 35px ;
         left: 15px;
         }
@@ -267,9 +245,12 @@
             border-radius: 5px;
             outline: none !important;
             position: relative;
+            border: 1px solid white;
         top: 35px ;
         left: 35px;
         }
+
+        /* home widget end */
 
         #cards{
                 background-color: #f2f3f3 !important;
@@ -294,17 +275,37 @@
             padding-top: 20px;
             /* margin: 0 auto; */
         }
-        .container-fluid .head{
+        .container-fluid .tabs{
             border: 1px solid black;
             background-color: pink !important;
             margin-bottom: 50px !important;
+            height: 50px;
+            display: flex;
+            gap: 25px;
+            font-size: 20px;
         }
    
    
-
-
-
+#widget .row .c{
+    /* width: 50% !important; */
+    height: inherit;
+    /* background-color: yellow; */
+    width: 400px;
+    /* border:  1px solid black; */
+}
+            
+#widget .row{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
         
+.c h2{
+    position: relative;
+    /* background-color: yellow; */
+    width: 50%;
+    padding-left: 40px;
+}
 
 
 
@@ -391,12 +392,14 @@
          <!-- cover end -->
 
          <!-- home widget -->
+          <section id="widget">
           <div id="container">
-            <div class="home-widget row">
+            <div class="home-widget ">
                 <div class="home-widget-title">
                     <h3>Sell Your Car on PakWheels and Get the Best Price</h3>
                 </div>
-            <div class="column">
+                <div class="row">
+               <div class=" c ">
                 <h2>Sell it Myself !</h2>
                 <div class="des">
                     <div class="tick">
@@ -418,7 +421,7 @@
                         </div>
                         </div>
                 </div>
-                 <div class="column1">
+                 <div class=" c ">
                 <h2>Sell it for me</h2>
                 <div class="des">
                     <div class="tick">
@@ -439,16 +442,26 @@
                        
                         </div>
                         </div>
-                    </div>
+                 </div>
 
                      </div>
+                     </div>
                 </div>
+                </section>
+                <!-- home widget end -->
 
                     <section id="cards">
 
                     <div class="container-fluid">
                        <h2>Browse Used Cars</h2>
-                       <div class="head"> </div>
+                       <div class="tabs">
+                        <div class="tab-active">Category</div>
+                        <div class="tab">City</div>
+                        <div class="tab">Make</div>
+                        <div class="tab">Model</div>
+                        <div class="tab">Budget</div>
+                        <div class="tab">Body type</div>
+                         </div>
                           
                         </div>
                     </div>
