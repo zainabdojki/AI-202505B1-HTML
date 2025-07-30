@@ -252,38 +252,74 @@
 
         /* home widget end */
 
-        #cards{
+        .cards{
                 background-color: #f2f3f3 !important;
             position: relative;
             bottom: -150px; 
+          
         }
 
         .container-fluid{
-            border: 1px solid green;
+            /* border: 1px solid green; */
             width: 100%;
-            height: 400px;
-            /* position: relative;
-            top: 150px; */
-            /* position: relative;
-            position: absolute; */
-            /* width: 1020px; */
+            height: 550px;
+            position: relative;
+            margin-top: -40px;
+           
 
         }
         .container-fluid h2{
             font-family: sans-serif;
-            padding-left: 300px;
+            padding-left: 180px;
             padding-top: 20px;
             /* margin: 0 auto; */
         }
         .container-fluid .tabs{
-            border: 1px solid black;
-            background-color: pink !important;
-            margin-bottom: 50px !important;
-            height: 50px;
-            display: flex;
-            gap: 25px;
-            font-size: 20px;
+            /* border: 1px solid black; */
+            /* background-color: pink !important; */
+            margin-top: 50px !important;
+            height: 40px;
+           
         }
+        /* .tabs{
+            border-color: #049c46;
+        } */
+         
+        .tabs ul li{
+            display: inline;
+             padding: 20px;
+            /* text-align: center; */
+            font-size: 19px;
+            font-family: sans-serif;
+            position: relative;
+            left: 120px;
+            top: -30px;
+            /* border: yellow;
+            background-color: aqua; */
+          
+           
+        }
+        .tabs ul{
+             border-bottom:1px solid green !important;
+             position: relative;
+             top: 20px;
+             /* width: 90%; */
+             /* position: relative;
+             left: 150px; */
+             /* margin: 0 300px; */
+        }
+
+        
+
+        /* .tabs .line{
+            border-bottom:2px solid #14416f !important;
+            border: 1px solid black;
+            background-color: #b73439;
+            width: 10px;
+            
+           
+           
+        } */
    
    
 #widget .row .c{
@@ -305,8 +341,331 @@
     /* background-color: yellow; */
     width: 50%;
     padding-left: 40px;
+    color: #233d7b;
+    font-family: sans-serif;
 }
 
+
+.grid-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    /* position: relative;
+    top: 50px; */
+    margin: 0 105px;
+    margin-left: 150px;
+    /* margin-top: -100px; */
+    margin-top: 50px;
+
+}
+
+.grid-cards #cards{
+    width: 150px ;
+    background-color: #fafafa;
+    border: 1px solid #696969;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(158, 153, 153, 0.05);
+    transition: transform 0.2s;
+}
+
+#cards:hover{
+    transform: translateV(-5px );
+}
+
+#cards img{
+    width: 80px;
+    height: 80px;
+    /* margin-bottom: 10px; */
+}
+#cards p{
+    font-size: 20px;
+    font-style: inherit;
+    color: #494040;
+    margin: 0;
+}
+
+/* section 4 start */
+#Pak{
+    /* border: 1px solid rgb(205, 24, 24); */
+    color: black;
+    font-size: 20px;
+    position: relative;
+    top: 170px;
+    margin-bottom: 50px; }
+   
+  #Pak h1{
+    color: black !important;
+    margin-left: 170px;
+  }
+  #Pak .col{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+ }
+
+     #Pak .col .row{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+       
+
+    }
+
+     #Pak .col .row .co{
+        border: 1px solid black;
+        height: 150px;
+        width: 500px;
+        margin: 15px;
+        position: relative;
+        top: -200px;
+      
+    }
+    .row .co{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  .co .img img{
+    height: 40%;
+    max-width: 100%;
+    /* display: flex; */
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+
+
+  }
+  /* .co .content{
+    
+    padding-left: 200px;
+    position: relative;
+    top: -240px;
+    left: -50px;
+    text-align: center;
+    
+  } */
+
+   /* card 1 start */
+  .co .content1{
+    /* background-color: #b73439 !important; */
+    padding-left: 200px;
+     position: relative;
+    top: -240px;
+    left: 20px;
+    text-align: center;
+  }
+
+  .co .content1 h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 5px;
+    top: -10px;
+  }
+  .co .content1 p{
+    color: #233D7A !important;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+    top: -5px;
+  }
+  /* card 1 end  */
+
+  /* card 2 start */
+  .co .content2{
+    /* background-color: #b73439 !important; */
+    padding-left: 200px;
+     position: relative;
+    top: -240px;
+    left: 30px;
+    text-align: center;
+  }
+   .co .content2 h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: -40px;
+    top: 10px;
+  }
+  .co .content2 p{
+    color: #233D7A !important;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+    top: 15px;
+    left: -50px;
+  }
+  /* card 2 end */
+
+  /* card 3 start */
+  .co .content3{
+    /* background-color: #b73439 !important; */
+    padding-left: 200px;
+     position: relative;
+    top: -210px;
+    left: 60px;
+    text-align: center;
+  }
+    .co .content3 h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: -20px;
+    top: 10px;
+  }
+
+  .co .content3 p{
+    color: #233D7A !important;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+    top: 15px;
+    left: -30px;
+  }
+  /* card 3 end */
+
+  /* card 4 start */
+  .co .content4{
+    /* background-color: #b73439 !important; */
+    padding-left: 200px;
+     position: relative;
+    top: -210px;
+    left: 60px;
+    text-align: center;
+  }
+
+  .co .content4 h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: -20px;
+    top: -40px;
+  }
+
+  .co .content4 p{
+    color: #233D7A !important;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+    top: -35px;
+    left: -30px;
+  }
+  /* card4 end  */
+
+  /* card 5 start */
+  .co .content5{
+    /* background-color: #b73439 !important; */
+    padding-left: 200px;
+     position: relative;
+    top: -210px;
+    left: 60px;
+    text-align: center;
+  }
+    .co .content5 h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: -20px;
+    top: -15px;
+  }
+
+  .co .content5 p{
+    color: #233D7A !important;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+    top: -10px;
+    left: -25px;
+  }
+  /* card 5 end */
+
+  /* card 6 start */
+  .co .content6{
+    /* background-color: #b73439 !important; */
+    padding-left: 200px;
+     position: relative;
+    top: -210px;
+    left: 60px;
+    text-align: center;
+  }
+
+  .co .content6 h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: -20px;
+    top: 20px;
+  }
+
+  .co .content6 p{
+    color: #233D7A !important;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+    top: 25px;
+    left: -30px;
+  }
+  /* card 6 end */
+
+  /* card 7 start */
+   .co .content7{
+    /* background-color: #b73439 !important; */
+    padding-left: 200px;
+     position: relative;
+    top: -210px;
+    left: 60px;
+    text-align: center;
+  }
+    .co .content7 h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: -20px;
+    top: -5px;
+  }
+
+  .co .content7 p{
+    color: #233D7A !important;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+    top: 10px;
+    left: -40px;
+  }
+  /* card 7 end */
+
+  /* card8 start */
+  .co .content8{
+    /* background-color: #b73439 !important; */
+    padding-left: 200px;
+     position: relative;
+    top: -210px;
+    left: 60px;
+    text-align: center;
+  }
+
+  .co .content8 h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: -20px;
+    top: -40px;
+  }
+
+  .co .content8 p{
+    color: #233D7A !important;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+    top: -35px;
+    left: -30px;
+  }
+
+  
+
+ 
 
 
     </style>
@@ -385,13 +744,13 @@
                         </div>
 
                     </div>
-                    <div class="advance">
+                    <!-- <div class="advance">
                        <button>Advanced Filter</button> 
-                    </div>
+                    </div> -->
          </section>
-         <!-- cover end -->
+         <!-- SECTION 1 end -->
 
-         <!-- home widget -->
+         <!-- SECTION 2 START -->
           <section id="widget">
           <div id="container">
             <div class="home-widget ">
@@ -448,24 +807,157 @@
                      </div>
                 </div>
                 </section>
-                <!-- home widget end -->
-
-                    <section id="cards">
-
+                <!-- SECTION 2 end -->
+                   
+                <!-- SECTION 3 START -->
+                    <section class="cards">
                     <div class="container-fluid">
                        <h2>Browse Used Cars</h2>
                        <div class="tabs">
-                        <div class="tab-active">Category</div>
-                        <div class="tab">City</div>
-                        <div class="tab">Make</div>
-                        <div class="tab">Model</div>
-                        <div class="tab">Budget</div>
-                        <div class="tab">Body type</div>
+                        <ul>
+                            <li class="line">Category</li>
+                            <li>City</li>
+                            <li>Make</li>
+                            <li>Model</li>
+                            <li>Budget</li>
+                            <li>Body Type</li>
+                        </ul>
                          </div>
                           
+                         <div class="grid-cards">
+                            <div id="cards">
+                                <img src="images/pak1.svg" alt="">
+                                <p>Automatic Cars</p>
+                            </div>
+
+                             <div id="cards">
+                                <img src="images/pak2.svg" alt="">
+                                <p>Imported Cars</p>
+                            </div>
+
+                             <div id="cards">
+                                <img src="images/pak3.svg" alt="">
+                                <p>Jeep</p>
+                            </div>
+
+                             <div id="cards">
+                                <img src="images/pak4.svg" alt="">
+                                <p>Hybrid Cars</p>
+                            </div>
+
+                             <div id="cards">
+                                <img src="images/pak5.svg" alt="">
+                                <p>Diesel Cars</p>
+                            </div>
+
+                             <div id="cards">
+                                <img src="images/pak6.svg" alt="">
+                                <p>1000cc Cars</p>
+                            </div>
+
+                             <div id="cards">
+                                <img src="images/pak7.svg" alt="">
+                                <p>Small Cars</p>
+                            </div>
+
+                             <div id="cards">
+                                <img src="images/pak8.svg" alt="">
+                                <p>Superdari</p>
+                            </div>
+
+                             <div id="cards">
+                                <img src="images/pak9.svg" alt="">
+                                <p>Urgent</p>
+                            </div>
+
+                             <div id="cards">
+                                <img src="images/pak10.svg" alt="">
+                                <p>Japanese Cars</p>
+                            </div>
+
+                             <div id="cards">
+                                <img src="images/pak11.svg" alt="">
+                                <p>2 Door</p>
+                            </div>
+
+                             <div id="cards">
+                                <img src="images/pak12.svg" alt="">
+                                <p>3 Door</p>
+                            </div>
+
+        
+                             </div>
                         </div>
-                    </div>
-                    </section>
+                     </section>
+                      <!-- SECTION 3 END -->
+
+                      <!-- SECTION 4 START -->
+                       <section id="Pak">
+                        <h1>PakWheels Offerings</h1>
+                        <div class="col">
+                            <div class="row">
+                                <div class="co col1">
+                                    <div class="img"> <img src="images/pakw1.png" alt=""></div>
+                                    <div class="content1">
+                                        <p>PakWheels</p>
+                                        <h3> SELL IT FOR ME</h3>
+                                    </div>
+                                </div>
+
+                                <div class="co col2">
+                                    <div class="img"> <img src="images/pakw5.png" alt=""></div>
+                                    <div class="content2">
+                                        <p>PakWheels</p>
+                                        <h3> AUCTION SHEET VERIFICATION</h3>
+                                    </div>
+                                </div>
+                                <div class="co col3">
+                                     <div class="img"> <img src="images/pakw2.png" alt=""></div>
+                                    <div class="content3">
+                                        <p>PakWheels</p>
+                                        <h3> CAR INSPECTION</h3>
+                                    </div>
+                                </div>
+                                <div class="co col4">
+                                     <div class="img"> <img src="images/pakw6.png" alt=""></div>
+                                    <div class="content4">
+                                        <p>PakWheels</p>
+                                        <h3> CAR INSURANCE</h3>
+                                    </div>
+
+                                </div>
+                                <div class="co col5">
+                                     <div class="img"> <img src="images/pakw3.png" alt=""></div>
+                                    <div class="content5">
+                                        <p>PakWheels</p>
+                                        <h3> CAR FINANCE</h3>
+                                    </div>
+                                </div>
+                                <div class="co col6">
+                                     <div class="img"> <img src="images/pakw7.png" alt=""></div>
+                                    <div class="content6">
+                                        <p>PakWheels</p>
+                                        <h3> CAR REGISTRATION</h3>
+                                    </div>
+                                </div>
+                                <div class="co col7">
+                                    <div class="img"> <img src="images/pakw4.png" alt=""></div>
+                                    <div class="content7">
+                                        <p>PakWheels</p>
+                                        <h3> OWNERSHIP TRANSFER</h3>
+                                    </div>
+                                </div>
+                                 <div class="co col8">
+                                    <div class="img"> <img src="images/pakw1.png" alt=""></div>
+                                    <div class="content8">
+                                        <p>PakWheels</p>
+                                        <h3> SELL IT FOR ME</h3>
+                                    </div>
+                                 </div>
+
+                            </div>
+                        </div>
+                       </section>
 
                 
 
