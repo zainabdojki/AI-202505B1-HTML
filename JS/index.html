@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript class-1</title>
+</head>
+<body>
+<script>
+    var stdName ; //variable declaration
+    stdName = 'Ali Khan' ;  //variable initialization
+    var empName = 'Sana' ; //declare bhi krrhe and initiazlize short hand property
+    console.log(stdName);
+    console.log(empName);
+    //var stdName; //redeclaration
+    stdName = 'hassan' ; //reinitiazlization
+    console.log(stdName);
+
+    //Let scope block only reinitializa possible
+    let stdAge ; //variable declaration
+    stdAge = 20 ;
+    console.log(stdAge);
+    //let stdAge cannot redeclare
+    stdAge = 21 ; //reinitiazlization hoskti ha
+    console.log(stdAge);
+
+    //const no redeclare no reinitialize possible
+    const piVal = 3.14
+    console.log(piVal);
+
+
+
+</script>
+</body>
+</html>
