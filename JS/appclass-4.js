@@ -1,8 +1,8 @@
 // Arithmetic operators
 // html file name operATORSclass-4.js
 
-let num1 = prompt( "Enter First Number");
-let num2 = prompt("Enter Second Number");
+let num1 = +prompt( "Enter First Number");
+let num2 = +prompt("Enter Second Number");
 
 let result = num1 + num2
 // let result = num1 - num2
