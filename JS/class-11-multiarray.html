@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class 11 multidimensional array</title>
+</head>
+<body>
+    <script>
+    // <!-- multidimensional array -->
+     let courses = [
+     ["html", "css", "js", "bootstrap", "jquery"],
+     ["xml", "json", "adv.js", "php"],
+     ["sql server", "c#", ".net" , "angular"],
+     ]
+    //    step 1
+    //  document.write(courses[0][3], "<br>" , courses[2][3])
+
+    //    step2
+    //  document.write(courses)
+
+        //  step 3
+    //  for(let value of courses){
+    //     document.write(value[1], "<br>" , value[0], "<br>")
+    //  }
+
+        // step 4
+     for(value of courses){
+        for(data of value){
+            document.write(data, "<br>")
+        }
+     }
+     </script>
+</body>
+</html>
