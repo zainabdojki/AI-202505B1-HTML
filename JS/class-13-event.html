@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <!-- <button onclick="myapp(10, 20)"> Click Here</button> -->
+      <!-- <button onmousedown="myapp(10, 20)"> Click Here</button> -->
+        <!-- <button onmouseup="myapp(10, 20)"> Click Here</button> -->
+          <!-- <button ondblclick="myapp(10, 20)"> Click Here</button> -->
+            <!-- <button onmousemove="myapp(10, 20)"> Click Here</button> -->
+              <!-- <button onmouseover="myapp(10, 20)"> Click Here</button> -->
+                <!-- <button onmouseout="myapp(10, 20)"> Click Here</button> -->
+
+                <button id="btn"> Click me</button>
+                <p id="para"></p>
+    <script>
+        // function bankr isme event use krengy
+        // let myapp =(num1 , num2)=> document.write(num1 + num2)
+
+       let btn = document.getElementById("btn")
+
+        //  CLICK
+    //    btn.addEventListener("click", function(){
+    //     document.getElementById("para").innerHTML = "hello world"
+    //    })
+
+        //   DBL CLICK
+      btn.addEventListener("dblclick", function(){
+        document.getElementById("para").innerHTML = "hello world"
+       })
+    </script>
+</body>
+</html>
