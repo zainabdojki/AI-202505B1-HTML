@@ -1,0 +1,29 @@
+[
+    {"p_id": 1,
+    "p_name" : "watch",
+    "p_price" : "$100",
+    "p_qty" : 1,
+    "p_image" : "download.jpg"
+},
+
+  {"p_id": 2,
+    "p_name" : "phone",
+    "p_price" : "$100",
+    "p_qty" : 1,
+    "p_image" : "phone.jpg"
+},
+
+  {"p_id": 3,
+    "p_name" : "headphones",
+    "p_price" : "$100",
+    "p_qty" : 1,
+    "p_image" : "headphones.jpg"
+},
+
+  {"p_id": 4,
+    "p_name" : "charger",
+    "p_price" : "$100",
+    "p_qty" : 1,
+    "p_image" : "charger.jpg"
+}
+]
