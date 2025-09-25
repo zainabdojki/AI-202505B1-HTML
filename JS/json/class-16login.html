@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <h2 align="centre"> LOGIN FORM</h2> 
+    <centre>
+        <form id="login">
+             <input type="text" placeholder="Enter your email" id="email" style="padding: 5px 30px;"> <br> <br>
+
+              <input type="text" placeholder="Enter your password" id="pass" style="padding: 5px 30px;"> <br> <br>
+
+              <button type="submit" id="btn" style="padding: 5px 10px; background-color: brown; color: white; outline: none; border: none; cursor: pointer;" > Submit</button>
+        </form>
+    </centre>
+</body>
+
+<script>
+    let login = document.getElementById("login")
+
+    login.addEventListener("submit" , function(e){
+        e.preventDefault()
+
+        let email = document.getElementById("email").value
+        let pass = document.getElementById("pass").value
+        let users = JSON.parse(localStorage.getItem("users")) ||  [];
+
+        let founduser = users.find(u => u.email === email &&  u.pass === pass )
+
+        if(founduser){
+            localStorage.setItem("loggedinuser", JSON.stringify(founduser))
+
+            alert("login completed")
+            location.assign('class-17welcome.html')
+        }
+
+        else{
+            alert("email id or password incorrect")
+            window.location.href = "class-16login.html"
+        }
+    })
+</script>
+</html>

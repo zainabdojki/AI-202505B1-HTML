@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h2 align="centre"> REGISTRATION FORM</h2> 
+    <centre>
+        <form id="myform">
+            <input type="text" placeholder="Enter your Name" id="name" style="padding: 5px 30px;"> <br> <br>
+
+             <input type="text" placeholder="Enter your email" id="email" style="padding: 5px 30px;"> <br> <br>
+
+              <input type="text" placeholder="Enter your password" id="pass" style="padding: 5px 30px;"> <br> <br>
+
+              <button type="submit" id="btn" style="padding: 5px 10px; background-color: brown; color: white; outline: none; border: none; cursor: pointer;" > Submit</button>
+        </form>
+    </centre>
+</body>
+
+<script>
+        let btn=document.getElementById("btn")
+        let  form = document.getElementById("myform")
+
+        form.addEventListener("submit", function(e){
+            e.preventDefault()
+            let name = document.getElementById("name").value
+              let email = document.getElementById("email").value
+                let pass = document.getElementById("pass").value
+
+                localStorage.setItem("name", name)
+                 localStorage.setItem("email", email)
+                  localStorage.setItem("pass", pass)
+
+                  if(name == "" || pass == ""){
+                    alert("please fill out all the fields")
+                  }
+
+                  let users = JSON.parse(localStorage.getItem("users")) || [];
+                  users.push({name : name, email: email, pass : pass})
+
+                  localStorage.setItem("users", JSON.stringify(users))
+                  location.assign('class-16login.html')
+                  this.reset()
+        })
+</script>
+</html>
